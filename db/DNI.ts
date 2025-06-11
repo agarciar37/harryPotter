@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb';
 import { DNI } from '../types.ts';
 
-const url = Deno.env.get('MONGO_URL');
+const url = Deno.env;
 
 if (!url) {
   throw new Error('MONGO_URL environment variable is not set');
